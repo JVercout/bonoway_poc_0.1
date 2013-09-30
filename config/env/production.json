@@ -1,5 +1,5 @@
 {
-    "db": "mongodb://localhost/bonoway",
+    "db": "mongodb://heroku:iftbam89@paulo.mongohq.com:10012/app18415033",
     "app": {
         "name": "Bonoway"
     },

@@ -7,9 +7,9 @@ var mongoose = require('mongoose'),
 
 
 /**
- * Article Schema
+ * Area Schema
  */
-var SiteSchema = new Schema({
+var AreaSchema = new Schema({
     created: {
         type: Date,
         default: Date.now
@@ -24,10 +24,6 @@ var SiteSchema = new Schema({
         default: '',
         trim: true
     },
-    areas:[{
-        type: Schema.ObjectId,
-        ref: 'Area'
-    }],
     user: {
         type: Schema.ObjectId,
         ref: 'User'
@@ -37,14 +33,14 @@ var SiteSchema = new Schema({
 /**
  * Validations
  */
-SiteSchema.path('name').validate(function(name) {
+AreaSchema.path('name').validate(function(name) {
     return name.length;
 }, 'Name cannot be blank');
 
 /**
  * Statics
  */
-SiteSchema.statics = {
+AreaSchema.statics = {
     load: function(id, cb) {
         this.findOne({
             _id: id
@@ -52,4 +48,4 @@ SiteSchema.statics = {
     }
 };
 
-mongoose.model('Site', SiteSchema);
+mongoose.model('Area', AreaSchema);

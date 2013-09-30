@@ -8,7 +8,7 @@ var mongoose = require('mongoose'),
 
 
 /**
- * Find article by id
+ * Find site by id
  */
 exports.site = function(req, res, next, id) {
     Site.load(id, function(err, site) {
@@ -20,11 +20,12 @@ exports.site = function(req, res, next, id) {
 };
 
 /**
- * Create a article
+ * Create a site
  */
 exports.create = function(req, res) {
     var site = new Site(req.body);
     site.user = req.user;
+    site.areas = req.body.areas;
 
     site.save(function(err) {
         if (err) {
@@ -39,7 +40,7 @@ exports.create = function(req, res) {
 };
 
 /**
- * Update a article
+ * Update a site
  */
 exports.update = function(req, res) {
     var site = req.site;
@@ -52,7 +53,7 @@ exports.update = function(req, res) {
 };
 
 /**
- * Delete an article
+ * Delete an site
  */
 exports.destroy = function(req, res) {
     var site = req.site;
@@ -69,17 +70,20 @@ exports.destroy = function(req, res) {
 };
 
 /**
- * Show an article
+ * Show an site
  */
 exports.show = function(req, res) {
     res.jsonp(req.site);
 };
 
 /**
- * List of Articles
+ * List of Sites
  */
 exports.all = function(req, res) {
-    Site.find().sort('-name').exec(function(err, site) {
+    Site.find().sort('-name')
+                .populate('user', 'username name')
+                .populate('area', 'name')
+                .exec(function(err, site) {
         if (err) {
             res.render('error', {
                 status: 500
@@ -89,3 +93,7 @@ exports.all = function(req, res) {
         }
     });
 };
+
+/**
+ *  Add/Remove Area to site
+ */
