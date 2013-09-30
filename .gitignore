@@ -1,0 +1,4 @@
+.DS_Store
+.nodemonignore
+.sass-cache/
+public/lib
