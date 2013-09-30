@@ -21,9 +21,9 @@ exports.user = {
 };
 
 /**
- * Article authorizations routing middleware
+ * Site authorizations routing middleware
  */
-exports.article = {
+exports.site = {
     hasAuthorization: function(req, res, next) {
         if (req.article.user.id != req.user.id) {
             return res.send(401, 'User is not authorized');

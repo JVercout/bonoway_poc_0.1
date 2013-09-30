@@ -3,18 +3,18 @@
  */
 var mongoose = require('mongoose'),
     async = require('async'),
-    Article = mongoose.model('Article'),
+    Site = mongoose.model('Site'),
     _ = require('underscore');
 
 
 /**
  * Find article by id
  */
-exports.article = function(req, res, next, id) {
-    Article.load(id, function(err, article) {
+exports.site = function(req, res, next, id) {
+    Site.load(id, function(err, site) {
         if (err) return next(err);
-        if (!article) return next(new Error('Failed to load article ' + id));
-        req.article = article;
+        if (!site) return next(new Error('Failed to load site ' + id));
+        req.site = site;
         next();
     });
 };
@@ -23,17 +23,17 @@ exports.article = function(req, res, next, id) {
  * Create a article
  */
 exports.create = function(req, res) {
-    var article = new Article(req.body);
-    article.user = req.user;
+    var site = new Site(req.body);
+    site.user = req.user;
 
-    article.save(function(err) {
+    site.save(function(err) {
         if (err) {
             return res.send('users/signup', {
                 errors: err.errors,
-                article: article
+                site: site
             });
         } else {
-            res.jsonp(article);
+            res.jsonp(site);
         }
     });
 };
@@ -42,12 +42,12 @@ exports.create = function(req, res) {
  * Update a article
  */
 exports.update = function(req, res) {
-    var article = req.article;
+    var site = req.site;
 
-    article = _.extend(article, req.body);
+    site = _.extend(site, req.body);
 
-    article.save(function(err) {
-        res.jsonp(article);
+    site.save(function(err) {
+        res.jsonp(site);
     });
 };
 
@@ -55,15 +55,15 @@ exports.update = function(req, res) {
  * Delete an article
  */
 exports.destroy = function(req, res) {
-    var article = req.article;
+    var site = req.site;
 
-    article.remove(function(err) {
+    site.remove(function(err) {
         if (err) {
             res.render('error', {
                 status: 500
             });
         } else {
-            res.jsonp(article);
+            res.jsonp(site);
         }
     });
 };
@@ -72,20 +72,20 @@ exports.destroy = function(req, res) {
  * Show an article
  */
 exports.show = function(req, res) {
-    res.jsonp(req.article);
+    res.jsonp(req.site);
 };
 
 /**
  * List of Articles
  */
 exports.all = function(req, res) {
-    Article.find().sort('-created').populate('user', 'name username').exec(function(err, articles) {
+    Site.find().sort('-name').exec(function(err, site) {
         if (err) {
             res.render('error', {
                 status: 500
             });
         } else {
-            res.jsonp(articles);
+            res.jsonp(site);
         }
     });
 };

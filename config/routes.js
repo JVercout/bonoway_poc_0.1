@@ -62,16 +62,16 @@ module.exports = function(app, passport, auth) {
     //Finish with setting up the userId param
     app.param('userId', users.user);
 
-    //Article Routes
-    var articles = require('../app/controllers/articles');
-    app.get('/articles', articles.all);
-    app.post('/articles', auth.requiresLogin, articles.create);
-    app.get('/articles/:articleId', articles.show);
-    app.put('/articles/:articleId', auth.requiresLogin, auth.article.hasAuthorization, articles.update);
-    app.del('/articles/:articleId', auth.requiresLogin, auth.article.hasAuthorization, articles.destroy);
+    //Site Routes
+    var sites = require('../app/controllers/sites');
+    app.get('/sites', sites.all);
+    app.post('/sites', auth.requiresLogin, sites.create);
+    app.get('/sites/:siteId', sites.show);
+    app.put('/sites/:siteId', auth.requiresLogin, auth.site.hasAuthorization, sites.update);
+    app.del('/sites/:siteId', auth.requiresLogin, auth.site.hasAuthorization, sites.destroy);
 
     //Finish with setting up the articleId param
-    app.param('articleId', articles.article);
+    app.param('siteId', sites.site);
 
     //Home route
     var index = require('../app/controllers/index');

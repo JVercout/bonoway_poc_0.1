@@ -9,17 +9,17 @@ var mongoose = require('mongoose'),
 /**
  * Article Schema
  */
-var ArticleSchema = new Schema({
+var SiteSchema = new Schema({
     created: {
         type: Date,
         default: Date.now
     },
-    title: {
+    name: {
         type: String,
         default: '',
         trim: true
     },
-    content: {
+    abstract: {
         type: String,
         default: '',
         trim: true
@@ -33,14 +33,14 @@ var ArticleSchema = new Schema({
 /**
  * Validations
  */
-ArticleSchema.path('title').validate(function(title) {
-    return title.length;
-}, 'Title cannot be blank');
+SiteSchema.path('name').validate(function(name) {
+    return name.length;
+}, 'Name cannot be blank');
 
 /**
  * Statics
  */
-ArticleSchema.statics = {
+SiteSchema.statics = {
     load: function(id, cb) {
         this.findOne({
             _id: id
@@ -48,4 +48,4 @@ ArticleSchema.statics = {
     }
 };
 
-mongoose.model('Article', ArticleSchema);
+mongoose.model('Site', SiteSchema);

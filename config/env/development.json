@@ -1,7 +1,7 @@
 {
-    "db": "mongodb://localhost/mean-dev",
+    "db": "mongodb://localhost/bonoway-dev",
     "app": {
-        "name": "MEAN - A Modern Stack - Development"
+        "name": "Bonoway DEV"
     },
     "facebook": {
         "clientID": "APP_ID",
