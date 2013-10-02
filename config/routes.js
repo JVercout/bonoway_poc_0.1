@@ -67,11 +67,15 @@ module.exports = function(app, passport, auth) {
     app.get('/sites', sites.all);
     app.post('/sites', auth.requiresLogin, sites.create);
     app.get('/sites/:siteId', sites.show);
+    app.get('/sites/:siteId/areas', sites.showAreas);
     app.put('/sites/:siteId', auth.requiresLogin, auth.site.hasAuthorization, sites.update);
     app.del('/sites/:siteId', auth.requiresLogin, auth.site.hasAuthorization, sites.destroy);
 
     //Finish with setting up the articleId param
     app.param('siteId', sites.site);
+
+
+
 
     //Home route
     var index = require('../app/controllers/index');

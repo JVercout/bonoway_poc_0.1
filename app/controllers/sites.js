@@ -22,7 +22,7 @@ exports.site = function(req, res, next, id) {
 /**
  * Create a site
  */
-exports.create = function(req, res) {
+exports.create = function(req, res, next) {
     var site = new Site(req.body);
     site.user = req.user;
     site.areas = req.body.areas;
@@ -76,13 +76,17 @@ exports.show = function(req, res) {
     res.jsonp(req.site);
 };
 
+
+exports.showAreas = function(req, res){
+    var areas = req.site.areas;
+};
 /**
  * List of Sites
  */
 exports.all = function(req, res) {
     Site.find().sort('-name')
                 .populate('user', 'username name')
-                .populate('area', 'name')
+                .populate('area')
                 .exec(function(err, site) {
         if (err) {
             res.render('error', {

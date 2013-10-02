@@ -25,6 +25,7 @@ exports.area = function(req, res, next, id) {
 exports.create = function(req, res) {
     var area = new Area(req.body);
     area.user = req.user;
+    area.lines = req.body.lines;
 
     area.save(function(err) {
         if (err) {
@@ -42,7 +43,7 @@ exports.create = function(req, res) {
  * Update an area
  */
 exports.update = function(req, res) {
-    var area = req.site;
+    var area = req.area;
 
     area = _.extend(area, req.body);
 
@@ -55,7 +56,7 @@ exports.update = function(req, res) {
  * Delete an area
  */
 exports.destroy = function(req, res) {
-    var area = req.site;
+    var area = req.area;
 
     area.remove(function(err) {
         if (err) {
@@ -79,13 +80,13 @@ exports.show = function(req, res) {
  * List of Areas
  */
 exports.all = function(req, res) {
-    Area.find().sort('-name').exec(function(err, site) {
+    Area.find().sort('-name').exec(function(err, area) {
         if (err) {
             res.render('error', {
                 status: 500
             });
         } else {
-            res.jsonp(site);
+            res.jsonp(area);
         }
     });
 };

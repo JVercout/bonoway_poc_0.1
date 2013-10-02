@@ -1,6 +1,3 @@
-/**
- * Module dependencies.
- */
 
 var mongoose = require('mongoose'),
     config = require('../../config/config'),
@@ -8,9 +5,9 @@ var mongoose = require('mongoose'),
 
 
 /**
- * Site Schema
+ * Line Schema
  */
-var SiteSchema = new Schema({
+var LineSchema = new Schema({
     created: {
         type: Date,
         default: Date.now
@@ -25,13 +22,17 @@ var SiteSchema = new Schema({
         default: '',
         trim: true
     },
-    areas:[{
+    difficulty:{
         type: Schema.ObjectId,
-        ref: 'Area'
-    }],
-    image:{
-      type: Schema.ObjectId,
-      ref: 'Image'
+        ref: 'Difficulty'
+    },
+    orientation:{
+        type: Schema.ObjectId,
+        ref: 'Orientation'
+    },
+    ethic: {
+        type: Schema.ObjectId,
+        ref: 'Ethic'
     },
     user: {
         type: Schema.ObjectId,
@@ -39,24 +40,26 @@ var SiteSchema = new Schema({
     }
 });
 
-
 /**
  * Validations
  */
-SiteSchema.path('name').validate(function(name) {
+LineSchema.path('name').validate(function(name) {
     return name.length;
 }, 'Name cannot be blank');
 
 /**
  * Statics
  */
-SiteSchema.statics = {
+LineSchema.statics = {
     load: function(id, cb) {
         this.findOne({
             _id: id
         }).populate('user', 'name username')
+          .populate('difficulty', 'name')
+          .populate('orientation', 'name')
+          .populate('ethic', 'name')
           .exec(cb);
     }
 };
 
-mongoose.model('Site', SiteSchema);
+mongoose.model('Line', LineSchema);

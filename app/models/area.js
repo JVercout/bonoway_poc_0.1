@@ -24,6 +24,10 @@ var AreaSchema = new Schema({
         default: '',
         trim: true
     },
+    lines:[{
+        type: Schema.ObjectId,
+        ref: 'Line'
+    }],
     user: {
         type: Schema.ObjectId,
         ref: 'User'
@@ -44,7 +48,9 @@ AreaSchema.statics = {
     load: function(id, cb) {
         this.findOne({
             _id: id
-        }).populate('user', 'name username').exec(cb);
+        }).populate('user', 'name username')
+          .populate('lines', 'name difficulty')
+          .exec(cb);
     }
 };
 
