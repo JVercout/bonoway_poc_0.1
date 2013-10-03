@@ -1,0 +1,11 @@
+<section data-ng-controller="SitesController" data-ng-init="findOne()">
+	<span>{{site.created | date:'medium'}}</span>
+	<span>{{site.user.name}}</span>
+	<h2>{{site.name}} <a data-ng-show="global.user._id == site.user._id" href="/#!/sites/{{site._id}}/edit">edit</a></h2>
+    <div>Abstract : {{site.abstract}}</div>
+
+    <h4>Areas</h4>
+    <div>
+        <span data-ng-repeat="area in site.areas"><a href="/#!/areas/{{area._id}}">{{area.name}}</a><br/></span>
+    </div>
+</section>

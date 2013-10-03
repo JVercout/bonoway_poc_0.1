@@ -1,0 +1,11 @@
+<section data-ng-controller="AreasController" data-ng-init="find()">
+	<ul class="areas unstyled">
+		<li data-ng-repeat="area in areas">
+			<span>{{area.created | date:'medium'}}</span> /
+			<span>{{area.user.name}}</span>
+			<h2><a data-ng-href="#!/areas/{{area._id}}">{{area.name}}</a></h2>
+			<div>{{area.abstract}}</div>
+		</li>
+	</ul>
+	<h1 data-ng-hide="!areas || areas.length">No areas yet. <br> Why don't you <a href="/#!/areas/create">Create One</a>?</h1>
+</section>

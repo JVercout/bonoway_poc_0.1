@@ -2,17 +2,41 @@
 window.app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
-        when('/articles', {
-            templateUrl: 'views/articles/list.html'
+        when('/lines',{
+            templateUrl: 'views/lines/list.html'
         }).
-        when('/articles/create', {
-            templateUrl: 'views/articles/create.html'
+        when('/lines/create',{
+            templateUrl: 'views/lines/create.html'
         }).
-        when('/articles/:articleId/edit', {
-            templateUrl: 'views/articles/edit.html'
+        when('/lines/:lineId/edit', {
+            templateUrl: 'views/lines/edit.html'
         }).
-        when('/articles/:articleId', {
-            templateUrl: 'views/articles/view.html'
+        when('/lines/:lineId', {
+            templateUrl: 'views/lines/view.html'
+        }).
+        when('/areas',{
+            templateUrl: 'views/areas/list.html'
+        }).
+        when('/areas/create',{
+            templateUrl: 'views/areas/create.html'
+        }).
+        when('/areas/:areaId/edit', {
+            templateUrl: 'views/areas/edit.html'
+        }).
+        when('/areas/:areaId', {
+            templateUrl: 'views/areas/view.html'
+        }).
+        when('/sites',{
+            templateUrl: 'views/sites/list.html'
+        }).
+        when('/sites/create',{
+            templateUrl: 'views/sites/create.html'
+        }).
+        when('/sites/:siteId/edit', {
+            templateUrl: 'views/sites/edit.html'
+        }).
+        when('/sites/:siteId', {
+            templateUrl: 'views/sites/view.html'
         }).
         when('/', {
             templateUrl: 'views/index.html'

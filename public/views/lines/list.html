@@ -1,0 +1,13 @@
+<section data-ng-controller="LinesController" data-ng-init="find()">
+	<ul class="lines unstyled">
+		<li data-ng-repeat="line in lines">
+			<span>{{line.created | date:'medium'}}</span> /
+			<span>{{line.user.name}}</span>
+			<h2><a data-ng-href="#!/lines/{{line._id}}">{{line.name}}</a></h2>
+            <h3>{{ line.difficulty.name }}</h3>
+            <h3>{{ line.orientation.name }}</h3>
+			<div>{{line.abstract}}</div>
+		</li>
+	</ul>
+	<h1 data-ng-hide="!lines || lines.length">No lines yet. <br> Why don't you <a href="/#!/lines/create">Create One</a>?</h1>
+</section>

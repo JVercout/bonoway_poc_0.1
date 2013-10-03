@@ -24,6 +24,25 @@ var AreaSchema = new Schema({
         default: '',
         trim: true
     },
+    orientation:{
+        type: Schema.ObjectId,
+        ref: 'Orientation'
+    },
+    ethic: {
+        type: Schema.ObjectId,
+        ref: 'Ethic'
+    },
+    approach:{
+        type: Number
+    },
+    rock:{
+        type: Schema.ObjectId,
+        ref: 'Rock'
+    },
+    image:{
+        type: Schema.ObjectId,
+        ref: 'Image'
+    },
     lines:[{
         type: Schema.ObjectId,
         ref: 'Line'
@@ -49,7 +68,11 @@ AreaSchema.statics = {
         this.findOne({
             _id: id
         }).populate('user', 'name username')
+          .populate('orientation')
+          .populate('ethic')
+          .populate('rock')
           .populate('lines', 'name difficulty')
+          .populate('image')
           .exec(cb);
     }
 };

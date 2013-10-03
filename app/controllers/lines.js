@@ -84,6 +84,8 @@ exports.show = function(req, res) {
  */
 exports.all = function(req, res) {
     Line.find().sort('-created')
+        .populate('user', 'name username')
+        .populate('difficulty')
         .exec(function(err, lines) {
             if (err) {
                 res.render('error', {status: 500});

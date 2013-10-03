@@ -2,28 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffeaa69c-7898-4e0f-8483-126b8a862b84" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/areas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/areas.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/bolting.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/boltings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/boltings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/boltings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/areas/create.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/lines/create.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/sites/create.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/difficulties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/difficulties.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/areas/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/lines/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/sites/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/ethics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/ethics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/image.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/lines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/lines.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/areas/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/lines/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/sites/list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/orientations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/orientations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/rock.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/rocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/rocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/rocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/controllers/sites.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/services/sites.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/areas/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/lines/view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/views/sites/view.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/controllers/articles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/services/articles.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/create.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/edit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/list.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/views/articles/view.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.js" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/area.js" afterPath="$PROJECT_DIR$/app/models/area.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/areas.js" afterPath="$PROJECT_DIR$/app/controllers/areas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/views/articles.css" afterPath="$PROJECT_DIR$/public/css/views/articles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/middlewares/authorization.js" afterPath="$PROJECT_DIR$/config/middlewares/authorization.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/config.js" afterPath="$PROJECT_DIR$/public/js/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/difficulty.js" afterPath="$PROJECT_DIR$/app/models/difficulty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ethic.js" afterPath="$PROJECT_DIR$/app/models/ethic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/express.js" afterPath="$PROJECT_DIR$/config/express.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/foot.jade" afterPath="$PROJECT_DIR$/app/views/includes/foot.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/includes/head.jade" afterPath="$PROJECT_DIR$/app/views/includes/head.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/header.js" afterPath="$PROJECT_DIR$/public/js/controllers/header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/line.js" afterPath="$PROJECT_DIR$/app/models/line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/lines.js" afterPath="$PROJECT_DIR$/app/controllers/lines.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/orientation.js" afterPath="$PROJECT_DIR$/app/models/orientation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.js" afterPath="$PROJECT_DIR$/config/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/site.js" afterPath="$PROJECT_DIR$/app/models/site.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sites.js" afterPath="$PROJECT_DIR$/app/controllers/sites.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="BonowayAlpha.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380729764130" ignored="false" />
+    <file path="/Dummy.txt" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380820555774" ignored="false" />
     <file path="/model.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380718058767" ignored="false" />
-    <file path="/site.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380727927656" ignored="false" />
-    <file path="/sites.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380727983525" ignored="false" />
-    <file path="/routes.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380721739751" ignored="false" />
-    <file path="/authorization.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380571238656" ignored="false" />
-    <file path="/head.jade" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380571707399" ignored="false" />
+    <file path="/site.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380834521247" ignored="false" />
+    <file path="/sites.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380833057987" ignored="false" />
+    <file path="/routes.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380835927203" ignored="false" />
+    <file path="/authorization.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380833003284" ignored="false" />
+    <file path="/head.jade" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380745723855" ignored="false" />
     <file path="/header.html" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380571865022" ignored="false" />
-    <file path="/area.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380718435223" ignored="false" />
-    <file path="/areas.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380716903226" ignored="false" />
+    <file path="/area.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380836080145" ignored="false" />
+    <file path="/areas.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380836235023" ignored="false" />
     <file path="/api.test.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380711455319" ignored="false" />
-    <file path="/difficulty.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380715709506" ignored="false" />
-    <file path="/ethic.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380716039142" ignored="false" />
-    <file path="/line.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380716453293" ignored="false" />
+    <file path="/difficulty.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380834350359" ignored="false" />
+    <file path="/ethic.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380834443313" ignored="false" />
+    <file path="/line.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380837861748" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/mongoose-attachments/index.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380726104570" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/mongoose-attachments/test/testFindImageMagickFormats.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380726104570" ignored="false" />
     <file path="/attachments.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380727517923" ignored="false" />
-    <file path="/image.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380727885241" ignored="false" />
+    <file path="/image.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380734566734" ignored="false" />
+    <file path="/images.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380735352327" ignored="false" />
+    <file path="/express.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380740554255" ignored="false" />
+    <file path="/create.html" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380832258950" ignored="false" />
+    <file path="/view.html" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380836034243" ignored="false" />
+    <file path="/lines.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380837892840" ignored="false" />
+    <file path="/list.html" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380832303258" ignored="false" />
+    <file path="/edit.html" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380832345837" ignored="false" />
+    <file path="/foot.jade" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380835953459" ignored="false" />
+    <file path="/orientation.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380834367855" ignored="false" />
+    <file path="/bolting.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380835191254" ignored="false" />
+    <file path="/boltings.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380835451702" ignored="false" />
+    <file path="/rock.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380835816535" ignored="false" />
+    <file path="/rocks.js" changelist="ffeaa69c-7898-4e0f-8483-126b8a862b84" time="1380836000150" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,46 +116,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/line/model.js">
+      <file leaf-file-name="view.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/views/areas/view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="20" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0">
+            <state line="9" column="37" selection-start="521" selection-end="521" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="site.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/site.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="6" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.26107594">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.js">
+      <file leaf-file-name="bolting.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/bolting.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="12" selection-start="2182" selection-end="2186" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2200" column="0" selection-start="62007" selection-end="62007" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="line.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/line.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="7" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+            <state line="6" column="10" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,7 +146,16 @@
       <file leaf-file-name="ethic.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/ethic.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="5" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orientation.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/orientation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,25 +164,43 @@
       <file leaf-file-name="difficulty.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/difficulty.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sites.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sites.js">
+      <file leaf-file-name="line.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/line.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="75" selection-start="31" selection-end="31" vertical-scroll-proportion="0.09366391">
+            <state line="62" column="28" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="document.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/document.js">
+      <file leaf-file-name="lines.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/controllers/lines.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1185" column="0" selection-start="28641" selection-end="28641" vertical-scroll-proportion="0.0">
+            <state line="30" column="26" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="areas.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/services/areas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="area.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/area.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="27" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,30 +224,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/difficulty.js" />
-        <option value="$PROJECT_DIR$/app/models/orientation.js" />
-        <option value="$PROJECT_DIR$/app/models/ethic.js" />
-        <option value="$PROJECT_DIR$/app/models/line.js" />
-        <option value="$PROJECT_DIR$/app/controllers/areas.js" />
-        <option value="$PROJECT_DIR$/app/controllers/lines.js" />
-        <option value="$PROJECT_DIR$/app/controllers/orientations.js" />
-        <option value="$PROJECT_DIR$/app/controllers/difficulties.js" />
-        <option value="$PROJECT_DIR$/app/controllers/ethics.js" />
-        <option value="$PROJECT_DIR$/test/line/model.js" />
-        <option value="$PROJECT_DIR$/app/models/area.js" />
+        <option value="$PROJECT_DIR$/public/js/services/boltings.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/boltings.js" />
+        <option value="$PROJECT_DIR$/public/views/lines/view.html" />
+        <option value="$PROJECT_DIR$/app/models/rock.js" />
+        <option value="$PROJECT_DIR$/app/controllers/rocks.js" />
         <option value="$PROJECT_DIR$/config/routes.js" />
-        <option value="$PROJECT_DIR$/node_modules/mongoose-attachments/lib/attachments.js" />
-        <option value="$PROJECT_DIR$/app/models/image.js" />
-        <option value="$PROJECT_DIR$/app/models/site.js" />
-        <option value="$PROJECT_DIR$/app/controllers/sites.js" />
+        <option value="$PROJECT_DIR$/app/views/includes/foot.jade" />
+        <option value="$PROJECT_DIR$/public/js/services/rocks.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/rocks.js" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/public/views/areas/view.html" />
+        <option value="$PROJECT_DIR$/app/models/area.js" />
+        <option value="$PROJECT_DIR$/app/controllers/areas.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/areas.js" />
+        <option value="$PROJECT_DIR$/app/models/line.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/lines.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="698" />
-    <option name="y" value="130" />
-    <option name="width" value="946" />
-    <option name="height" value="569" />
+    <option name="y" value="22" />
+    <option name="width" value="1241" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -208,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonowayAlpha" />
+              <option name="myItemId" value="BonowayAlpha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -218,7 +299,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonowayAlpha" />
+              <option name="myItemId" value="BonowayAlpha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -232,7 +313,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonowayAlpha" />
+              <option name="myItemId" value="BonowayAlpha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -240,7 +321,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -250,7 +331,193 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonowayAlpha" />
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="areas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -264,7 +531,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonowayAlpha" />
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="middlewares" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -282,7 +567,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonowayAlpha" />
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BonowayAlpha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -300,7 +629,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bonowayAlpha" />
+              <option name="myItemId" value="BonowayAlpha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -320,15 +649,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mean" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp\www\bonowayAlpha\app\models" />
-      <recent name="C:\wamp\www\bonowayAlpha\app\controllers" />
-      <recent name="C:\wamp\www\bonowayAlpha\test" />
+      <recent name="$PROJECT_DIR$/public/js/controllers" />
+      <recent name="$PROJECT_DIR$/public/js/services" />
       <recent name="$PROJECT_DIR$/app/controllers" />
-      <recent name="$PROJECT_DIR$/test" />
+      <recent name="$PROJECT_DIR$/app/models" />
+      <recent name="$PROJECT_DIR$/public/views" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.server.js">
@@ -350,7 +680,7 @@
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
       <RunnerSettings RunnerId="NodeJS.debug" />
       <ConfigurationWrapper RunnerId="NodeJS.debug" />
       <method />
@@ -374,15 +704,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="698" y="130" width="946" height="569" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1241" height="778" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2458655" sideWeight="0.43234324" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56765676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1724138" sideWeight="0.4969697" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5030303" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -391,6 +720,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -463,130 +793,128 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/controllers/sites.js</url>
-          <line>25</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/app/controllers/images.js</url>
+          <line>28</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/config/routes.js</url>
+          <line>130</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/orientations.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/areas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="35" selection-start="713" selection-end="713" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1380717840545" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380717840545" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380717840545" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380717840545" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380717840545" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/difficulties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="61" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1380717859420" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380717859420" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380717859420" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ethics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="19" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1380717906471" expanded="true" signature="-1:-1" placeholder="/** Find difficulty by id ...*/" />
-            <marker date="1380717906471" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1380717906471" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/area/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="43" selection-start="821" selection-end="821" vertical-scroll-proportion="0.0">
+        <state line="85" column="46" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/line.js">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/areas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+        <state line="4" column="38" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/rocks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="174" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="26" selection-start="612" selection-end="612" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/rock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="20" selection-start="506" selection-end="506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/bolting.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="10" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ethic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/orientation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/difficulty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/line/model.js">
+    <entry file="file://$PROJECT_DIR$/app/models/line.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="20" selection-start="2169" selection-end="2169" vertical-scroll-proportion="0.0">
+        <state line="62" column="28" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.js">
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/lines.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="12" selection-start="2182" selection-end="2186" vertical-scroll-proportion="0.0">
+        <state line="30" column="26" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose-attachments/lib/attachments.js">
+    <entry file="file://$PROJECT_DIR$/public/js/services/areas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="66" selection-start="6655" selection-end="6655" vertical-scroll-proportion="1.2588556">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/area.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="18" selection-start="565" selection-end="565" vertical-scroll-proportion="1.4822888">
+        <state line="72" column="27" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/areas/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="37" selection-start="521" selection-end="521" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/site.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="6" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2200" column="0" selection-start="62007" selection-end="62007" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/document.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1185" column="0" selection-start="28641" selection-end="28641" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sites.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="75" selection-start="31" selection-end="31" vertical-scroll-proportion="0.09366391">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.26107594">
           <folding />
         </state>
       </provider>

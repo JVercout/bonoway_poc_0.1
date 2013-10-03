@@ -86,7 +86,7 @@ exports.showAreas = function(req, res){
 exports.all = function(req, res) {
     Site.find().sort('-name')
                 .populate('user', 'username name')
-                .populate('area')
+                .populate('areas', 'name abstract')
                 .exec(function(err, site) {
         if (err) {
             res.render('error', {

@@ -22,18 +22,22 @@ var LineSchema = new Schema({
         default: '',
         trim: true
     },
+    length:{
+        type: Number
+    },
+    bolting:{
+        type: Schema.ObjectId,
+        ref: 'Bolting'
+    },
     difficulty:{
         type: Schema.ObjectId,
         ref: 'Difficulty'
     },
-    orientation:{
+
+    images: [{
         type: Schema.ObjectId,
-        ref: 'Orientation'
-    },
-    ethic: {
-        type: Schema.ObjectId,
-        ref: 'Ethic'
-    },
+        ref: 'Image'
+    }],
     user: {
         type: Schema.ObjectId,
         ref: 'User'
@@ -56,8 +60,8 @@ LineSchema.statics = {
             _id: id
         }).populate('user', 'name username')
           .populate('difficulty', 'name')
-          .populate('orientation', 'name')
-          .populate('ethic', 'name')
+          .populate('bolting')
+          .populate('images', 'name path')
           .exec(cb);
     }
 };

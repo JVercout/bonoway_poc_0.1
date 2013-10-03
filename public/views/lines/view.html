@@ -1,0 +1,16 @@
+<section data-ng-controller="LinesController" data-ng-init="findOne()">
+	<span>{{line.created | date:'medium'}}</span>
+	<span>{{line.user.name}}</span>
+	<h2>{{line.name}} <a data-ng-show="global.user._id == line.user._id" href="/#!/lines/{{line._id}}/edit">edit</a></h2>
+	<ul>
+        <li>Difficulty : {{ line.difficulty.name }}</li>
+        <li>Bolting : {{line.bolting.name}}</li>
+    </ul>
+    <div>Description : {{line.abstract}}</div>
+    <br/>
+    <h4>IMAGES</h4>
+    <div data-ng-repeat="image in line.images">
+        <p>{{image.name}}</p>
+        <img ng-src="{{image.url}}"/>
+    </div>
+</section>

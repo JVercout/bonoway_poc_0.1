@@ -6,11 +6,19 @@ var mongoose = require('mongoose'),
 /**
  * Ethic Schema
  */
+    //MultiPitch
+    //Boulder
+    //Cliffs
+    //Psycho-bloc
 var EthicSchema = new Schema({
     name: {
         type: String,
         default: '',
         trim: true
+    },
+    image: {
+        type: Schema.ObjectId,
+        ref: 'Image'
     }
 });
 
@@ -21,7 +29,7 @@ EthicSchema.statics = {
     load: function(id, cb) {
         this.findOne({
             _id: id
-        }).exec(cb);
+        }).populate('image').exec(cb);
     }
 };
 

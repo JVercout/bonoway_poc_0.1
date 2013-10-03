@@ -80,7 +80,13 @@ exports.show = function(req, res) {
  * List of Areas
  */
 exports.all = function(req, res) {
-    Area.find().sort('-name').exec(function(err, area) {
+    Area.find().sort('-name')
+        .populate('user', 'name username')
+        .populate('lines', 'name abstract')
+        .populate('orientation')
+        .populate('ethic')
+        .populate('rock')
+        .exec(function(err, area) {
         if (err) {
             res.render('error', {
                 status: 500

@@ -25,7 +25,31 @@ exports.user = {
  */
 exports.site = {
     hasAuthorization: function(req, res, next) {
-        if (req.article.user.id != req.user.id) {
+        if (req.site.user.id != req.user.id) {
+            return res.send(401, 'User is not authorized');
+        }
+        next();
+    }
+};
+
+/**
+ * Line authorizations routing middleware
+ */
+exports.line = {
+    hasAuthorization: function(req, res, next) {
+        if (req.line.user.id != req.user.id) {
+            return res.send(401, 'User is not authorized');
+        }
+        next();
+    }
+};
+
+/**
+ * Area authorizations routing middleware
+ */
+exports.area = {
+    hasAuthorization: function(req, res, next) {
+        if (req.area.user.id != req.user.id) {
             return res.send(401, 'User is not authorized');
         }
         next();

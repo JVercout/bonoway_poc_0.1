@@ -14,6 +14,10 @@ var DifficultySchema = new Schema({
         default: '',
         trim: true
     },
+    image:{
+        type: Schema.ObjectId,
+        ref: 'Image'
+    },
     order: {
         type: Number
     }
@@ -26,7 +30,7 @@ DifficultySchema.statics = {
     load: function(id, cb) {
         this.findOne({
             _id: id
-        }).exec(cb);
+        }).populate('image').exec(cb);
     }
 };
 

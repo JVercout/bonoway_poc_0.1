@@ -29,16 +29,15 @@ var SiteSchema = new Schema({
         type: Schema.ObjectId,
         ref: 'Area'
     }],
-    image:{
-      type: Schema.ObjectId,
-      ref: 'Image'
+    images:{
+        type: Schema.ObjectId,
+        ref: 'Image'
     },
     user: {
         type: Schema.ObjectId,
         ref: 'User'
     }
 });
-
 
 /**
  * Validations
@@ -55,6 +54,8 @@ SiteSchema.statics = {
         this.findOne({
             _id: id
         }).populate('user', 'name username')
+          .populate('areas', 'name abstract')
+          .populate('image')
           .exec(cb);
     }
 };

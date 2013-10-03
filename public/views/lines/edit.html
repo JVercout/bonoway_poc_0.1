@@ -1,0 +1,40 @@
+<section data-ng-controller="LinesController" data-ng-init="findOne();populate()">
+	<form class="form-horizontal" data-ng-submit="update()">
+		<div class="control-group">
+			<label class="control-label" for="name">Name</label>
+
+			<div class="controls">
+				<input type="text" data-ng-model="line.name" id="name" placeholder="Name" required>
+				</input>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="abstract">Abstract</label>
+			<div class="controls">
+				<textarea data-ng-model="line.abstract" id="abstract" cols="30" rows="10" placeholder="Abstract">
+				</textarea>
+			</div>
+		</div>
+        <div class="control-group">
+            <label class="control-label" for="difficulty">Difficulty</label>
+            <select ng-model="line.difficulty._id" id="difficulty" required="required" ng-options="c._id as c.name for c in difficulties">
+                <!--<option value="">Choose a difficulty</option>-->
+            </select>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="orientation">Orientation</label>
+            <select ng-model="line.orientation._id" id="orientation" required="required" ng-options="c._id as c.name for c in orientations">
+            </select>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="ethic">Ethic</label>
+            <select ng-model="line.ethic._id" id="ethic" required="required" ng-options="c._id as c.name for c in ethics">
+            </select>
+        </div>
+		<div class="control-group">
+			<div class="controls">
+				<input type="submit" class="btn">
+			</div>
+		</div>
+	</form>
+</section>

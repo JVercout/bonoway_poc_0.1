@@ -1,0 +1,18 @@
+<section data-ng-controller="AreasController" data-ng-init="findOne()">
+	<span>{{area.created | date:'medium'}}</span>
+	<span>{{area.user.name}}</span>
+	<h2>{{area.name}} <a data-ng-show="global.user._id == area.user._id" href="/#!/areas/{{area._id}}/edit">edit</a></h2>
+    <ul>
+        <li>Abstract : {{area.abstract}}</li>
+        <li>Orientation : {{area.orientation.name}}</li>
+        <li>Ethic : {{area.ethic.name}}</li>
+        <li>Approach : {{area.approach}} (minutes)</li>
+        <li>Rock : {{area.rock.name}}</li>
+    </ul>
+
+    <h4>Lines</h4>
+    <div>
+        <span data-ng-repeat="line in area.lines"><a href="/#!/lines/{{line._id}}">{{line.name}}</a><br/></span>
+    </div>
+
+</section>
